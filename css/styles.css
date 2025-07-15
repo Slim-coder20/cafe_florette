@@ -28,7 +28,6 @@ a {
   height: 3px;
   width: 150px;
   background-color: #f4d03f;
-
 }
 
 p {
@@ -44,7 +43,7 @@ span {
   border-radius: 30px;
   font-weight: bold;
   font-size: 14px;
-
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -52,11 +51,12 @@ span {
   color: white;
 }
 
-.btn-primary:hover{
-  background: #dccc90;
-  transition: 0.5s ease-in-out;
-  color:white;
+.btn-primary:hover {
+  background: #765e0b;
+  transform: translateY(-2px);
+  color: white;
 }
+
 /* HEADER */
 .header {
   background: #333;
@@ -80,8 +80,7 @@ header nav a {
   transition: all 0.3s ease;
 }
 header nav a:hover {
-color: white;
-
+  color: white;
 }
 header nav h1 {
   padding: 15px 0;
@@ -118,7 +117,6 @@ header nav ul li a:hover {
   background: url(../images/cafe1.jpg) center center;
   block-size: cover;
   text-align: center;
-  
 }
 
 .vp-content {
@@ -132,7 +130,6 @@ header nav ul li a:hover {
 .vp-content h1 {
   font-size: 50px;
   font-weight: 700;
- 
 }
 
 .vp-content p {
@@ -140,3 +137,44 @@ header nav ul li a:hover {
   letter-spacing: 0.5px;
   line-height: 1.9em;
 }
+
+/* Section Features  */
+.container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 0 auto;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.features {
+  padding: 100px 0 100px 0;
+  text-align: center;
+}
+
+.feature-elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background: #f6f6f3;
+  border: 1px solid #575038;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.feature-elem:hover {
+  transform: translateY(-2px);
+}
+
+.feature-elem i {
+  color: #f4d03f;
+}
+.feature-elem h2 {
+  color: #765e0b;
+  margin-top: 10px;
+}
+
