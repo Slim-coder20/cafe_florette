@@ -312,3 +312,42 @@ footer p {
 }
 
 /* Page Contact  */
+
+.contact {
+  padding: 100px 0 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form-container form label {
+  display: block;
+  font-weight: 700;
+  color: #8c5e24;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.contact-form-container form input, textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #f4d03f ;
+  border-radius: 3px;
+}
+
+.contact-form-container form textarea {
+  min-height: 80px;
+
+}
+
+.contact-form-container button {
+  margin-top: 20px;
+}
