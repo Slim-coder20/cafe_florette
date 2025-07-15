@@ -16,6 +16,14 @@ h3 {
 html,
 body {
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Conteneur principal pour pousser le footer en bas */
+main {
+  flex: 1;
 }
 
 a {
@@ -250,8 +258,57 @@ footer p {
   align-items: center;
   font-size: 18px;
   font-weight: 700;
-  
 }
 .title-footer a:hover {
-  color:#f6f6f3
+  color: #f6f6f3;
 }
+
+/* page where.html  */
+
+.where {
+  padding: 100px 0 100px 0;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+.where-container {
+  display: flex;
+  gap: 50px;
+}
+
+.where-img {
+  width: 50%;
+  border: 1px solid #f4d03f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+.where-text {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.underline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8c5e24;
+  color: #8c5e24;
+}
+
+.chip {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  border-radius: 100%;
+  background: #333;
+  color: white;
+}
+
+.chip-purple {
+  background: #be418c;
+}
+
+.chip-brown {
+  background: #8c5e24;
+}
+
+/* Page Contact  */
